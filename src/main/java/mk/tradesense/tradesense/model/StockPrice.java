@@ -8,7 +8,7 @@ import java.time.LocalDate;
 
 @Data
 @Entity
-@Table(name = "stock_prices")
+@Table(name = "stock_items")
 public class StockPrice {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,16 +18,16 @@ public class StockPrice {
     private String stockCode;
 
     @Column(nullable = false)
-    private LocalDate date;
+    private String date;
 
-    private BigDecimal lastPrice;
-    private BigDecimal maxPrice;
-    private BigDecimal minPrice;
-    private BigDecimal avgPrice;
-    private BigDecimal percentChange;
-    private Integer quantity;
-    private BigDecimal turnoverBest;
-    private BigDecimal totalTurnover;
+    private String lastPrice;
+    private String maxPrice;
+    private String minPrice;
+    private String avgPrice;
+    private String percentChange;
+    private String quantity;
+    private String turnoverBest;
+    private String totalTurnover;
 
 
 }

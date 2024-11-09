@@ -17,7 +17,7 @@ public class DataLoader {
                 throw new IllegalStateException("PYTHON_PATH environment variable is not set");
             }
 
-            ProcessBuilder processBuilder = new ProcessBuilder(pythonPath, "src/main/java/mk/tradesense/tradesense/scripts/data_scraper_v2.py");
+            ProcessBuilder processBuilder = new ProcessBuilder(pythonPath, "src/main/java/mk/tradesense/tradesense/scripts/data_scraper_v4.py");
             processBuilder.redirectErrorStream(true);
             Process process = processBuilder.start();
 
